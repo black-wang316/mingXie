@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模仿微信小程序Toast等弹框</title>
+    <!--<link rel="stylesheet" href="css/common.css">-->
+</head>
+<a href="javascript:;" class="btn">toast 弹框</a><br>
+<div style="margin-left: 30px;padding: 30px;background: #000;color: #fff;border-radius: 10px;display: inline-block">
+    showToast({<br>
+    &nbsp; &nbsp;title:"成功的哟！",<br>
+    &nbsp; &nbsp;icon:'success',<br>
+    &nbsp; &nbsp;duration:3000,<br>
+    &nbsp; &nbsp;mask:true,<br>
+    &nbsp; &nbsp;success:function (res) {<br>
+    &nbsp; &nbsp; &nbsp; &nbsp;console.warn(JSON.stringify(res))<br>
+    &nbsp; &nbsp;}<br>
+    });<br>
+    <span style="color: red">hideToast() 可以手动关闭showToast弹框</span>
+</div>
+<div style="display: inline-block;padding-top: 5px;padding-left: 30px">
+    <table>
+        <tr>
+            <td>参数</td>
+            <td>类型</td>
+            <td>必填</td>
+            <td>说明</td>
+        </tr>
+        <tr>
+            <td>title</td>
+            <td>String</td>
+            <td>是</td>
+            <td>提示的内容</td>
+        </tr>
+        <tr>
+            <td>icon</td>
+            <td>String</td>
+            <td>否</td>
+            <td>图标，有效值 "success", "loading", "none"</td>
+        </tr>
+        <tr>
+            <td>image</td>
+            <td>String</td>
+            <td>否</td>
+            <td>自定义图标的本地路径，image 的优先级高于 icon</td>
+        </tr>
+        <tr>
+            <td>duration</td>
+            <td>Number</td>
+            <td>否</td>
+            <td>提示的延迟时间，单位毫秒，默认：1500</td>
+        </tr>
+        <tr>
+            <td>mask</td>
+            <td>Boolean</td>
+            <td>否</td>
+            <td>是否显示透明蒙层，防止触摸穿透，默认：false</td>
+        </tr>
+        <tr>
+            <td>success</td>
+            <td>Function</td>
+            <td>否</td>
+            <td>接口调用成功的回调函数</td>
+        </tr>
+        <tr>
+            <td>fail</td>
+            <td>Function</td>
+            <td>否</td>
+            <td>接口调用失败的回调函数</td>
+        </tr>
+        <tr>
+            <td>complete</td>
+            <td>Function</td>
+            <td>否</td>
+            <td>接口调用结束的回调函数（调用成功、失败都会执行)</td>
+        </tr>
+    </table>
+</div>
+<br>
+<a href="javascript:;" class="btn1">showLoading 弹框</a><br>
+<div style="margin-left: 30px;padding: 30px;background: #000;color: #fff;border-radius: 10px;display: inline-block;">
+    showLoading({<br>
+    &nbsp; &nbsp;title:"测试测试测试,测试测试测试,测试测试测试",<br>
+    &nbsp; &nbsp;mask:true,<br>
+    &nbsp; &nbsp;success:function (res) {<br>
+    &nbsp; &nbsp;&nbsp; &nbsp;console.warn(JSON.stringify(res))<br>
+    &nbsp; &nbsp;}<br>
+    });<br>
+    <span style="color: red">hideLoading() 为关闭showLoading弹框</span><br>
+    setTimeout(function(){<br>
+    &nbsp; &nbsp;hideLoading()<br>
+    },2000)<br>
+</div>
+<div style="display: inline-block;padding-left: 30px">
+    <table>
+        <tr>
+            <td>参数</td>
+            <td>类型</td>
+            <td>必填</td>
+            <td>说明</td>
+        </tr>
+        <tr>
+            <td>title</td>
+            <td>String</td>
+            <td>是</td>
+            <td>提示的内容</td>
+        </tr>
+        <tr>
+            <td>mask</td>
+            <td>Boolean</td>
+            <td>否</td>
+            <td>是否显示透明蒙层，防止触摸穿透，默认：false</td>
+        </tr>
+        <tr>
+            <td>success</td>
+            <td>Function</td>
+            <td>否</td>
+            <td>接口调用成功的回调函数</td>
+        </tr>
+        <tr>
+            <td>fail</td>
+            <td>Function</td>
+            <td>否</td>
+            <td>接口调用失败的回调函数</td>
+        </tr>
+        <tr>
+            <td>complete</td>
+            <td>Function</td>
+            <td>否</td>
+            <td>接口调用结束的回调函数（调用成功、失败都会执行)</td>
+        </tr>
+    </table>
+</div>
+<br>
+<a href="#" class="btn2"  >显示模态对话框</a><br>
+<div style="margin-left: 30px;padding: 30px;background: #000;color: #fff;border-radius: 10px;display: inline-block;">
+    showModal({<br>
+    &nbsp; &nbsp;title:"提示",<br>
+    &nbsp; &nbsp;content:"asdasda",<br>
+    &nbsp; &nbsp;showCancel:true,<br>
+    &nbsp; &nbsp;cancelText:'no',<br>
+    &nbsp; &nbsp;cancelColor:"#ffffff",<br>
+    &nbsp; &nbsp;confirmText:'yes',<br>
+    &nbsp; &nbsp;confirmColor:'#ffffff',<br>
+    &nbsp; &nbsp;success:function (res) {<br>
+    &nbsp; &nbsp;&nbsp; &nbsp;if (res.confirm) {<br>
+    &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;console.warn("User clicking determination" + JSON.stringify(res));<br>
+    &nbsp; &nbsp;&nbsp; &nbsp; } <br>
+    &nbsp; &nbsp;&nbsp; &nbsp;else {<br>
+    &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;console.warn("User clicking cancel" + JSON.stringify(res));<br>
+    &nbsp; &nbsp;&nbsp; &nbsp;}<br>
+    &nbsp; &nbsp;}<br>
+    });<br>
+</div>
+<div style="display: inline-block;padding-top: 5px;padding-left: 30px">
+    <table>
+        <tr>
+            <td>参数</td>
+            <td>类型</td>
+            <td>必填</td>
+            <td>说明</td>
+        </tr>
+        <tr>
+            <td>title</td>
+            <td>String</td>
+            <td>是</td>
+            <td>提示的标题</td>
+        </tr>
+        <tr>
+            <td>content</td>
+            <td>String</td>
+            <td>是</td>
+            <td>提示的内容</td>
+        </tr>
+        <tr>
+            <td>content</td>
+            <td>Boolean</td>
+            <td>否</td>
+            <td>是否显示取消按钮，默认为 true</td>
+        </tr>
+        <tr>
+            <td>cancelText</td>
+            <td>String</td>
+            <td>否</td>
+            <td>取消按钮的文字，默认为"取消"，最多 4 个字符</td>
+        </tr>
+        <tr>
+        <td>cancelColor</td>
+        <td>HexColor</td>
+        <td>否</td>
+        <td>取消按钮的文字颜色，默认为"#000000"</td>
+        </tr>
+        <tr>
+            <td>confirmText</td>
+            <td>String</td>
+            <td>否</td>
+            <td>确定按钮的文字，默认为"确定"，最多 4 个字符</td>
+        </tr>
+        <tr>
+        <td>confirmColor</td>
+        <td>HexColor</td>
+        <td>否</td>
+        <td>确定按钮的文字颜色，默认为"#000000"</td>
+        </tr>
+        <tr>
+            <td>success</td>
+            <td>Function</td>
+            <td>否</td>
+            <td>接口调用成功的回调函数</td>
+        </tr>
+        <tr>
+            <td>fail</td>
+            <td>Function</td>
+            <td>否</td>
+            <td>接口调用失败的回调函数</td>
+        </tr>
+        <tr>
+            <td>complete</td>
+            <td>Function</td>
+            <td>否</td>
+            <td>接口调用结束的回调函数（调用成功、失败都会执行)</td>
+        </tr>
+    </table>
+    <table>
+        <h1 style="color: #0a6999;font-size: 16px">success返回参数说明</h1>
+        <tr>
+            <td>参数</td>
+            <td>类型</td>
+            <td>说明</td>
+        </tr>
+        <tr>
+            <td>confirm</td>
+            <td>Boolean</td>
+            <td>为 true 时，表示用户点击了确定按钮</td>
+        </tr>
+        <tr>
+            <td>cancel</td>
+            <td>Boolean</td>
+            <td>为 true 时，表示用户点击了取消</td>
+        </tr>
+    </table>
+</div>
+<br>
+<a href="javascript:;" class="btn3">showActionSheet ​显示操作菜单</a><br>
+<div style="margin-left: 30px;padding: 30px;background: #000;color: #fff;border-radius: 10px;display: inline-block;">
+    showActionSheet({<br>
+    &nbsp; &nbsp;itemList: ['A', 'B', 'C',],<br>
+    &nbsp; &nbsp;itemColor:"#cccccc",<br>
+    &nbsp; &nbsp;success: function(res) {<br>
+    &nbsp; &nbsp; &nbsp; &nbsp;console.warn(JSON.stringify(res))<br>
+    &nbsp; &nbsp;},<br>
+    });<br>
+</div>
+<div style="display: inline-block;padding-top: 5px;padding-left: 30px">
+    <table>
+        <tr>
+            <td>参数</td>
+            <td>类型</td>
+            <td>必填</td>
+            <td>说明</td>
+        </tr>
+        <tr>
+            <td>itemList</td>
+            <td>String Array</td>
+            <td>是</td>
+            <td>按钮的文字数组，数组长度最大为6个</td>
+        </tr>
+        <tr>
+            <td>itemColor</td>
+            <td>HexColor</td>
+            <td>否</td>
+            <td>	按钮的文字颜色，默认为"#000000"</td>
+        </tr>
+        <tr>
+            <td>success</td>
+            <td>Function</td>
+            <td>否</td>
+            <td>接口调用成功的回调函数</td>
+        </tr>
+        <tr>
+            <td>fail</td>
+            <td>Function</td>
+            <td>否</td>
+            <td>接口调用失败的回调函数</td>
+        </tr>
+        <tr>
+            <td>complete</td>
+            <td>Function</td>
+            <td>否</td>
+            <td>接口调用结束的回调函数（调用成功、失败都会执行)</td>
+        </tr>
+    </table>
+    <table>
+        <h1 style="color: #0a6999;font-size: 16px">success返回参数说明</h1>
+        <tr>
+            <td>参数</td>
+            <td>类型</td>
+            <td>说明</td>
+        <tr>
+            <td>tapIndex</td>
+            <td>Number</td>
+            <td>用户点击的按钮，从上到下的顺序，从0开始</td>
+        </tr>
+    </table>
+</div>
+<br>
+<!--<canvas id="canvas" width="140px" height="50px"></canvas>-->
+
+<body>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script  src="js/alert.js"></script>
+<script>
+    $(".btn").on("click",function () {
+        showToast({
+            title:"成功的哟！",
+            icon:'success',
+            duration:3000,
+            mask:true,
+            success:function (res) {
+                console.warn(JSON.stringify(res))
+            }
+        });
+        /*setTimeout(function(){
+            hideToast()
+        },1000)*/
+    });
+    $(".btn1").on("click",function () {
+        showLoading({
+            title:"测试测试测试,测试测试测试,测试测试测试",
+            mask:true,
+            success:function (res) {
+                console.warn(JSON.stringify(res))
+            }
+        });
+        setTimeout(function(){
+            hideLoading()
+        },2000)
+    });
+    $(".btn2").on("click",function () {
+        showModal({
+            title:"提示",
+            content:"asdasda",
+            showCancel:true,
+            cancelText:'no',
+            cancelColor:"#ffffff",
+            confirmText:'yes',
+            confirmColor:'#ffffff',
+            success:function (res) {
+                if (res.confirm) {
+                    console.warn("User clicking determination" + JSON.stringify(res));
+                } else {
+                    console.warn("User clicking cancel" + JSON.stringify(res));
+                }
+            }
+        });
+    });
+    $(".btn3").on("click",function () {
+        showActionSheet({
+            itemList: ['A', 'B', 'C',],
+            itemColor:"#cccccc",
+            success: function(res) {
+                console.warn(JSON.stringify(res))
+            },
+        });
+    });
+</script>
+</body>
+</html>

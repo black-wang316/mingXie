@@ -4,19 +4,8 @@
     <meta charset="UTF-8">
     <title>用户注册</title>
     <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/headFoot.css">
     <style>
-        header {
-            padding: 20px 0 0;
-        }
-
-        .logo {
-            padding-top: 10px;
-        }
-
-        .logo img {
-            cursor: pointer;
-        }
-
         .retMain {
             width: 790px;
             margin: 0 auto;
@@ -85,7 +74,8 @@
             margin: 10px 0 40px 0;
 
         }
-        .regRight ul li:nth-of-type(2) a{
+
+        .regRight ul li:nth-of-type(2) a {
             color: #c66;
             display: inline-block;
             width: 91px;
@@ -96,9 +86,11 @@
             cursor: pointer;
             background: url(../img/loginbg.png) no-repeat;
         }
-        .regRight ul li:nth-of-type(2):hover a{
+
+        .regRight ul li:nth-of-type(2):hover a {
             color: #c00;
         }
+
         .regLeft ul {
             display: flex;
             flex-direction: column;
@@ -107,49 +99,61 @@
             font-size: 14px;
             color: #888;
         }
-        .regLeft ul li{
+
+        .regLeft ul li {
             width: 370px;
         }
-        .regLeft ul li:nth-of-type(1) p{
+
+        .regLeft ul li:nth-of-type(1) p {
             font-size: 12px;
             background: #FCEAE8;
             color: #E6594E;
             height: 22px;
             line-height: 22px;
             border: 1px solid #E6594E;
+            visibility: hidden;
         }
+
         .regLeft ul li > span:nth-of-type(1) {
             display: inline-block;
             width: 100px;
             text-align: right;
             margin: 15px;
         }
-        .regLeft  ul li input {
+
+        .regLeft ul li input {
             width: 230px;
             height: 30px;
             border: 1px solid #ccc;
         }
-        .regLeft  ul li:nth-of-type(5) input {
+
+        .regLeft ul li:nth-of-type(5) input {
             width: 70px;
         }
-        .regLeft ul li p{
+
+        .regLeft ul li p {
             display: inline-block;
         }
-        #regcode ~p{
+
+        #regcode ~ p {
             width: 70px;
             height: 30px;
             background: #ccc;
             vertical-align: middle;
             line-height: 30px;
             text-align: center;
+            cursor: pointer;
         }
-        .check{
+
+        .check {
             font-size: 12px;
         }
-        .check a{
+
+        .check a {
             text-decoration: underline;
         }
-        .regBtn{
+
+        .regBtn {
             background: url(../img/regBtn.png) no-repeat 0 -198px;
             width: 89px;
             height: 38px;
@@ -158,6 +162,13 @@
             text-align: center;
             line-height: 38px;
             cursor: pointer;
+        }
+
+
+        .success{
+            background: #EBF7E3 !important;
+            color: #618605 !important;
+            border: 1px solid #99D073 !important;
         }
     </style>
 </head>
@@ -185,7 +196,7 @@
                     <ul>
                         <li>
                             <span></span>
-                            <p>请输入正确验证码</p>
+                            <p class="regTitle"></p>
                         </li>
                         <li>
                             <span>
@@ -230,13 +241,14 @@
                         <li class="check">
                         <span>
                         </span>
-                            <input type="checkbox" style="width: 12px;height: 12px;"> 我已阅读并同意 <a href="//www.s.cn/page-license.html">名鞋库会员注册协议</a>
+                            <input type="checkbox" checked id="check" style="width: 12px;height: 12px;"> 我已阅读并同意 <a
+                                href="//www.s.cn/page-license.html">名鞋库会员注册协议</a>
                         </li>
                         <li>
                         <span>
                         </span>
                             <p class="regBtn">
-                               注册新用户
+                                注册新用户
                             </p>
                         </li>
                     </ul>
@@ -256,11 +268,36 @@
         </article>
     </article>
 </main>
+<footer>
+    <div class="container con">
+        <div class="last-linklist clearfix">
+            <ul>
+                <li><a href="">关于名鞋</a></li>
+                <li><a href="">联系名鞋库</a></li>
+                <li><a href="">人才招聘</a></li>
+                <li><a href="">免责条款</a></li>
+                <li><a href="">法律声明</a></li>
+                <li><a href="">客户留言</a></li>
+                <li><a href="">意见反馈</a></li>
+                <li><a href="">全部分类</a></li>
+                <li><a href="">友情链接</a></li>
+                <li><a href="">鞋码对照表</a></li>
+                <li><a href="">问答咨询标签主题</a></li>
+                <li><a href="">鞋子品牌大全</a></li>
+                <li><a href="">商品大全</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright © 2008-2014 <span style="font-size: 20px;color: #c00;font-weight: 700;">s.cn</span>All Rights
+                Reserved.
+                <a href="" style="margin-left: 8px;margin-right: 8px; ">闽ICP备08106896号 </a> 经营许可证闽B2-20110061
+            </p>
+        </div>
+    </div>
+</footer>
 </body>
 <script src="../lib/jquery-1.10.1.min.js" type="text/javascript"></script>
-<script>
-    $(`.logo>img`).on(`click`, () => {
-        location.href = `../main.html`
-    })
-</script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script src="../js/register.js" type="text/javascript"></script>
 </html>
