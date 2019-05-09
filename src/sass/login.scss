@@ -1,14 +1,108 @@
-.login{
+.login {
   display: flex;
-  &>li:nth-of-type(1){
+  & > li:nth-of-type(1) {
     width: 40%;
     padding: 28px 0 0;
+    img{
+      cursor: pointer;
+    }
   }
-  &>li:nth-of-type(2){
+  & > li:nth-of-type(2) {
     width: 60%;
   }
-  ul{
+  ul {
     width: 450px;
     margin: auto;
+  }
+  .loginForm {
+    ul {
+      width: 85%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 14px;
+      color: #888;
+      background: #fafafa;
+      border: 1px solid #eee;
+      box-shadow: 3px 3px #F5F5F5;
+      float: left;
+      li {
+        width: 370px;
+        span:nth-of-type(1) {
+          display: inline-block;
+          width: 60px;
+          text-align: right;
+          margin: 15px;
+        }
+        input {
+          width: 230px;
+          height: 30px;
+          border: 1px solid #ccc;
+        }
+        p {
+          display: inline-block;
+        }
+      }
+      & > li:nth-of-type(1) {
+        p {
+          font-size: 12px;
+          background: #FCEAE8;
+          color: #E6594E;
+          height: 22px;
+          line-height: 22px;
+          border: 1px solid #E6594E;
+          //visibility: hidden;
+        }
+      }
+      & > li:nth-of-type(4) input {
+        width: 70px;
+      }
+    }
+  }
+  #logincode ~ p {
+    width: 70px;
+    height: 30px;
+    background: #ccc;
+    vertical-align: middle;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .loginBtn {
+    background: url(../img/regBtn.png) no-repeat 0 -198px;
+    width: 89px;
+    height: 38px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 38px;
+    cursor: pointer;
+  }
+  .regLj{
+    font-size: 12px;
+    padding: 35px 0 25px;
+    a{
+      color: #FF6600;
+      text-decoration: underline #FF6600;
+    }
+    a:hover{
+      color: red;
+    }
+  }
+  .elselogin{
+    padding: 12px 0 0;
+    font-size: 12px;
+    color: #888;
+    a{
+      display: inline-block;
+      float: left;
+      margin-top: 10px;
+      width: 115px;
+      height: 20px;
+      //overflow: visible;
+    }
+  }
+  .loginTitle{
+    visibility: hidden;
   }
 }

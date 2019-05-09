@@ -28,7 +28,7 @@ textarea {
 /*  当a标签嵌套img,在IE6里会出现蓝色边框 方法：border:0 none;*/
 img {
     border:0 none;
-    vertical-align:middle;
+    /*vertical-align:middle;*/
 }  
 
 table {
@@ -94,4 +94,16 @@ s,i,em{
 html,body{
     height: 100%;
     width: 100%;
+}
+.success{
+    background: #EBF7E3 !important;
+    color: #618605 !important;
+    border: 1px solid #99D073 !important;
+}
+.icon {
+    font-size: 10px;
+    width: 1em; height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    overflow: hidden;
 }

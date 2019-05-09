@@ -29,19 +29,22 @@ $("#name").on('blur', function () {
     let reg2 = /^(0|86|17951)?(13[0-9]|15[012356789]|166|17[3678]|18[0-9]|14[57])[0-9]{8}$/;
     if (reg1.test($(this).val().trim()) || reg2.test($(this).val().trim())) {
         $(".regTitle").css("visibility", "hidden");
-        count[$(`#name`).data('id')] = 1
+        //用户名是否重复
         $.ajax({
             type: 'post',
-            url: '../api/register.php',
+            url: '../api/loginRegister.php',
             data: {
+                type:'register',
                 username: $(this).val().trim()
             },
             success: str => {
                 let arr = JSON.parse(str)
                 if (!arr.status) {
                     $(".regTitle").css("visibility", "visible").removeClass("success").html(arr.msg);
+                    count[$(`#name`).data('id')] = 0
                 } else {
                     $(".regTitle").css("visibility", "visible").addClass("success").html(arr.msg);
+                    count[$(`#name`).data('id')] = 1
                 }
             }
         })
@@ -51,7 +54,6 @@ $("#name").on('blur', function () {
         count[$(`#name`).data('id')] = 0
     }
 })
-//用户名是否重复
 
 //密码验证
 $("#psw").on(`blur`, function () {
@@ -105,8 +107,9 @@ $(`.regBtn`).on(`click`,function () {
         if (res==count.length) {
             $.ajax({
               type: 'post',
-              url: '../api/register.php',
+              url: '../api/loginRegister.php',
               data:{
+                  type:'register',
                   username:$(`#name`).val().trim(),
                   password:$(`#psw`).val().trim()
               },
@@ -115,10 +118,11 @@ $(`.regBtn`).on(`click`,function () {
                   alert(arr.msg)
               }
             })
+        }else {
+            alert('注册失败')
         }
     } else {
         count[$(`#check`).data(`id`)]=0
         $(".regTitle").css("visibility", "visible").removeClass("success").html("同意协议才能注册");
     }
-
 })
