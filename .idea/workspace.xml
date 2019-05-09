@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2604020-b909-467a-86db-daaba2ca1b71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/img/wxCode1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/wxCode2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sass/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/conn.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/conn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/register.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/login.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/login.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/login.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,34 +13,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="749929022">
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="html" value="339" />
-          <entry key="scss" value="625" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="339" />
-          <entry key="SCSS" value="625" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="css" value="1" />
-          <entry key="png" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CSS" value="1" />
-          <entry key="Image" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5358067">
       <split-first>
@@ -62,8 +20,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="406">
-                  <caret line="94" column="5" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+                <state relative-caret-position="235">
+                  <caret line="76" column="29" lean-forward="true" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
                   <folding>
                     <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#article#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#svg#0;n#li#1;n#ul#0;n#article#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -317,11 +275,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557372098025</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="注册登录全部功能完成，首页顶部与logo静态完成">
+      <created>1557409321465</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1557409321465</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48411000" />
+    <option name="totallyTimeSpent" value="48720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -382,7 +347,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="注册完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="注册完成" />
+    <MESSAGE value="注册登录全部功能完成，首页顶部与logo静态完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="注册登录全部功能完成，首页顶部与logo静态完成" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../../peiXun2_1/week05/day04/04day4 函数/07随机验证码.html">
@@ -525,10 +491,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="200" column="21" selection-start-line="200" selection-start-column="21" selection-end-line="200" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="94" column="5" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+        <state relative-caret-position="235">
+          <caret line="76" column="29" lean-forward="true" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#article#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#svg#0;n#li#1;n#ul#0;n#article#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -539,13 +512,6 @@
             <element signature="n#style#0;n#svg#0;n#article#1;n#article#1;n#article#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="200" column="21" selection-start-line="200" selection-start-column="21" selection-end-line="200" selection-end-column="21" />
         </state>
       </provider>
     </entry>
