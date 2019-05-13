@@ -362,7 +362,7 @@ let removeCookie = (key)=>{
 	setCookie(key,``,-1)
 }
 //返回首页
-$(`.retMain`).on('click',()=>{
+$("body").on('click',` .retMainHtm`,()=>{
 	console.log(1)
 	location.href=`../main.html`
 })

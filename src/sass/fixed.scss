@@ -1,0 +1,287 @@
+.fixed {
+  width: 267px;
+  height: 100%;
+  position: fixed;
+  z-index: 99;
+  background: #323232;
+  right: -229px;
+  top: 0;
+  .fixL {
+    position: absolute;
+    left: 0;
+    top: 0;
+    //z-index: 100;
+    height: 100%;
+    width: 37px;
+    background: #000;
+    color: #fff;
+    & > ul {
+      svg {
+        display: block;
+        font-size: 22px;
+        margin: auto;
+      }
+      li {
+        position: relative;
+      }
+      li:hover {
+        background: #BD0000;
+      }
+      li:nth-of-type(1) {
+        position: relative;
+        width: 41px;
+        height: 157px;
+        padding: 10px 0;
+        top: 0;
+        left: -4px;
+        cursor: pointer;
+        background-color: #BD0000;
+        p {
+          width: 20px;
+          margin: 10px auto;
+          font-size: 18px;
+        }
+      }
+      li:nth-of-type(2) {
+        height: 122px;
+        margin-top: 23px;
+        position: relative;
+        left: 0;
+        width: 37px;
+        cursor: pointer;
+        padding: 10px 0;
+        p {
+          width: 15px;
+          margin: 10px auto;
+          font-size: 12px;
+          text-align: center;
+        }
+        & ~ li {
+          padding: 8px 0;
+        }
+      }
+      li:nth-of-type(4) {
+        margin-bottom: 220px;
+      }
+      .fixLTitle {
+        display: none;
+        position: absolute;
+        font-size: 12px;
+        right: 47px;
+        top: 0;
+        width: 90px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        color: #fff;
+        background-color: #494949;
+        border-radius: 5px;
+        &:after {
+          content: '';
+          position: absolute;
+          top: 10px;
+          right: -4px;
+          width: 8px;
+          height: 8px;
+          transform: rotate(45deg);
+          background-color: #494949;
+        }
+      }
+    }
+  }
+  .fixR {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 230px;
+    height: 100%;
+    & > .fixR1 {
+      visibility: visible;
+      width: 100%;
+      position: absolute;
+      //z-index: 10;
+      top: 0;
+      left: 0;
+      & > li {
+        text-align: center;
+        margin-top: 5px;
+      }
+      & > li:last-child {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          li {
+            text-align: center;
+            width: 49%;
+            height: 30px;
+            font-size: 12px;
+            line-height: 30px;
+            background: #4C4C4C;
+            margin-top: 5px;
+            a {
+              color: white;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+            &:hover {
+              background: #323232;
+            }
+          }
+        }
+      }
+    }
+    & > .fixR2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      padding: 8px 0;
+      visibility: hidden;
+      & > li {
+        text-align: center;
+      }
+      & > li:nth-of-type(2), & > li:nth-of-type(4), & > li:nth-of-type(6), & > li:nth-of-type(8) {
+        margin-bottom: 20px;
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          width: 214px;
+          margin: 0 auto;
+          li {
+            margin-top: 3px;
+            width: 70px;
+            height: 35px;
+            background: #4c4c4c url("../img/fixr_brand.png") no-repeat;
+            text-align: center;
+            line-height: 35px;
+            font-size: 12px;
+            color: transparent;
+            &:hover {
+              background: none;
+              color: white;
+              background-color: black;
+            }
+          }
+        }
+      }
+    }
+    & > .fixR3 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #e6e6e6;
+      display: flex;
+      visibility: hidden;
+      flex-direction: column;
+      & > li:nth-of-type(1) {
+        width: 222px;
+        height: 28px;
+        line-height: 28px;
+        background-color: #e6e6e6;
+        cursor: default;
+        margin: auto;
+        a {
+          float: right;
+          color: gray;
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+      & > li:nth-of-type(2) {
+        flex: 1;
+        background: white;
+        .gwList {
+          li {
+            height: 98px;
+            border-bottom: 1px solid #e6e6e6;
+            padding: 10px;
+            div:nth-of-type(1) {
+              width: 83px;
+              height: 75px;
+              float: left;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            div:nth-of-type(2) {
+              float: right;
+              width: 125px;
+              font-size: 12px;
+              color: #aaa;
+              padding-left: 8px;
+              p {
+                max-height: 32px;
+                overflow: hidden;
+              }
+              .gwPrice {
+                display: block;
+                height: 23px;
+                line-height: 23px;
+                margin-top: 3px;
+                color: #888888;
+              }
+              .gwNum {
+                height: 21px;
+                display: block;
+                & > span {
+                  display: inline-block;
+                }
+                & > span:nth-of-type(1), & > span:nth-of-type(3) {
+                  width: 14px;
+                  height: 14px;
+                  line-height: 14px;
+                  text-align: center;
+                  border-radius: 50%;
+                  background: #e6e6e6;
+                  color: gray;
+                }
+                & > span:last-child {
+                  float: right;
+                  background: gray;
+                  color: white;
+                  width: 34px;
+                  height: 17px;
+                  text-align: center;
+                  border-radius: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+      & > li:nth-of-type(3) {
+        height: 95px;
+        //display: flex;
+        //flex-direction: column;
+        //justify-content: space-between;
+        padding: 10px;
+        article:nth-of-type(1) {
+          display: flex;
+          justify-content: space-between;
+          font-size: 12px;
+          height: 30px;
+          line-height: 30px;
+          span:nth-of-type(2) {
+            color: #f67824;
+          }
+        }
+        article:nth-of-type(2) {
+          height: 40px;
+          background: #C40000;
+          color: white;
+          font-size: 14px;
+          text-align: center;
+          line-height: 40px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-header {
+.head {
     padding: 20px 0;
 }
 
@@ -10,7 +10,7 @@ header .logo img {
     cursor: pointer;
 }
 footer {
-    margin-top: 30px;
+    padding-top: 30px;
     padding-bottom: 62px;
     color: #888;
 }

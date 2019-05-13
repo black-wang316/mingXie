@@ -5,51 +5,123 @@
     <title>首页</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/headFoot.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fixed.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <style>
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-pagination-bullet {
+            width: 14px;
+            height: 14px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #C80002;
+        }
+
+        .swiper-container {
+            margin-top: 5px;
+        }
+        footer{
+            border-top: 2px solid #ce3c3b;
+        }
+        footer .container {
+            padding-top: 21px;
+            border-top: 0;
+        }
+    </style>
 </head>
 <body>
-<article class="headNav">
-    <article class="con">
-        <ul class="headNavMenu">
-            <li>
-                <span class="headTitle1">欢迎登陆名鞋库</span>
-                <span class="headTitle2">免费注册</span>
-            </li>
-            <li><span style="position:relative;z-index: 7">我的名鞋库</span>
-                <svg class="icon" aria-hidden="true" style="position:relative;z-index: 7">
-                    <use xlink:href="#icon-arrow-left-copy2"></use>
-                </svg>
-                <div class="hd"></div>
-                <ul class="myMxk">
-                    <li><a href="#">我的订单</a></li>
-                    <li><a href="#">我的积分</a></li>
-                    <li><a href="#">优惠券</a></li>
-                    <li><a href="#">商品收藏</a></li>
-                    <li><a href="#">收货地址</a></li>
-                    <li><a href="#">密码管理</a></li>
-                </ul>
-            </li>
-            <li>
-                <svg class="icon" aria-hidden="true" style="font-size:12px;">
-                    <use xlink:href="#icon-19"></use>
-                </svg>
-                <span style="position:relative;z-index: 7">手机名鞋库</span>
-                <svg class="icon" aria-hidden="true" style="position:relative;z-index: 7">
-                    <use xlink:href="#icon-arrow-left-copy2"></use>
-                </svg>
-                <div class="phone-hd"></div>
-                <div class="phone-hd-block">
-                    <img src="img/wxCode1.png" alt="" style="margin-right: 5px;"/>
-                    <img src="img/wxCode2.png" alt=""/>
-                </div>
-            </li>
-            <li><span>收藏名鞋库</span></li>
-            <li><a href="#"><img src="img/mainHeadTel.png" alt=""></a></li>
-        </ul>
-    </article>
-</article>
 <header>
+    <article class="headNav">
+        <article class="con">
+            <ul class="headNavMenu">
+                <li>
+                    <span class="headTitle1">欢迎登陆名鞋库</span>
+                    <span class="headTitle2">免费注册</span>
+                </li>
+                <li><span style="position:relative;z-index: 7">我的名鞋库</span>
+                    <svg class="icon" aria-hidden="true" style="position:relative;z-index: 7">
+                        <use xlink:href="#icon-arrow-left-copy2"></use>
+                    </svg>
+                    <div class="hd"></div>
+                    <ul class="myMxk">
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">我的积分</a></li>
+                        <li><a href="#">优惠券</a></li>
+                        <li><a href="#">商品收藏</a></li>
+                        <li><a href="#">收货地址</a></li>
+                        <li><a href="#">密码管理</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <svg class="icon" aria-hidden="true" style="font-size:12px;">
+                        <use xlink:href="#icon-19"></use>
+                    </svg>
+                    <span style="position:relative;z-index: 7">手机名鞋库</span>
+                    <svg class="icon" aria-hidden="true" style="position:relative;z-index: 7">
+                        <use xlink:href="#icon-arrow-left-copy2"></use>
+                    </svg>
+                    <div class="phone-hd"></div>
+                    <div class="phone-hd-block">
+                        <img src="img/wxCode1.png" alt="" style="margin-right: 5px;"/>
+                        <img src="img/wxCode2.png" alt=""/>
+                    </div>
+                </li>
+                <li><span>收藏名鞋库</span></li>
+                <li><a href="#"><img src="img/mainHeadTel.png" alt=""></a></li>
+            </ul>
+        </article>
+    </article>
 
+    <article class="head con clearfix">
+        <article class="logo">
+            <img src="//images.s.cn/images/css/newlogo.png" alt="logo" title="点击返回首页" class="retMainHtm">
+        </article>
+        <article class="logoRight clearfix">
+            <article class="search">
+                <article class="searchTop">
+                    <input type="text" class="searchBar">
+                    <p class="searchBtn">搜索</p>
+                </article>
+                <article class="keyword">
+                    热搜:
+                    <a href="###">
+                        跑步鞋
+                    </a>
+                    <a href="###">
+                        帆布鞋
+                    </a>
+                    <a href="###">
+                        T恤
+                    </a>
+                    <a href="###">
+                        胸衣Bra
+                    </a>
+                    <a href="###">
+                        紧身打底裤
+                    </a>
+                    <a href="###">
+                        三叶草
+                    </a>
+                </article>
+            </article>
+            <article class="cart">
+                <svg class="icon" aria-hidden="true" style="font-size: 20px">
+                    <use xlink:href="#icon-ai-cart"></use>
+                </svg>
+                <p>
+                    购物车<span>0</span>件
+                </p>
+            </article>
+        </article>
+    </article>
 </header>
 <nav>
     <article class="nav">
@@ -229,20 +301,381 @@
     </article>
 </nav>
 <main>
-
+    <article class="swiper-container" id="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/jd1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/jd2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/jd3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/jd5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/jd4.jpg" alt=""></div>
+        </div>
+        <!--按钮-->
+        <!--<div class="swiper-button-prev"></div>-->
+        <!--<div class="swiper-button-next"></div>-->
+        <!--分页-->
+        <div class="swiper-pagination"></div>
+    </article>
+    <article class="brand">
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </article>
+    <article class="explosion">
+        <article>
+            <ul>
+                <li>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+    </article>
+    <article class="hot">
+        <article>
+            <ul>
+                <li>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+    </article>
+    <article class="typeList">
+        <article data-id="1">
+            <article class="listTitle">
+                <img src="img/paoBuTitle.jpg" alt="短袖">
+            </article>
+            <ul class="listMain con">
+                <li>
+                    <article><img src="img/pbx/pbx01.jpg" alt=""></article>
+                    <p>adidas阿迪达斯男子跑步鞋ULTRABOOST潮流运动鞋BB6166</p>
+                    <article>
+                        <span>￥749</span>
+                        <del>1499</del>
+                        <span>立即抢购</span>
+                    </article>
+                </li>
+                <li>
+                    <article><img src="img/pbx/pbx01.jpg" alt=""></article>
+                    <p>adidas阿迪达斯男子跑步鞋ULTRABOOST潮流运动鞋BB6166</p>
+                    <article>
+                        <span>￥749</span>
+                        <del>1499</del>
+                        <span>立即抢购</span>
+                    </article>
+                </li>
+                <li>
+                    <article><img src="img/pbx/pbx01.jpg" alt=""></article>
+                    <p>adidas阿迪达斯男子跑步鞋ULTRABOOST潮流运动鞋BB6166</p>
+                    <article>
+                        <span>￥749</span>
+                        <del>1499</del>
+                        <span>立即抢购</span>
+                    </article>
+                </li>
+                <li>
+                    <article><img src="img/pbx/pbx01.jpg" alt=""></article>
+                    <p>adidas阿迪达斯男子跑步鞋ULTRABOOST潮流运动鞋BB6166</p>
+                    <article>
+                        <span>￥749</span>
+                        <del>1499</del>
+                        <span>立即抢购</span>
+                    </article>
+                </li>
+                <li>
+                    <article><img src="img/pbx/pbx01.jpg" alt=""></article>
+                    <p>adidas阿迪达斯男子跑步鞋ULTRABOOST潮流运动鞋BB6166</p>
+                    <article>
+                        <span>￥749</span>
+                        <del>1499</del>
+                        <span>立即抢购</span>
+                    </article>
+                </li>
+                <li>
+                    <article><img src="img/pbx/pbx01.jpg" alt=""></article>
+                    <p>adidas阿迪达斯男子跑步鞋ULTRABOOST潮流运动鞋BB6166</p>
+                    <article>
+                        <span>￥749</span>
+                        <del>1499</del>
+                        <span>立即抢购</span>
+                    </article>
+                </li>
+                <li>
+                    <article><img src="img/pbx/pbx01.jpg" alt=""></article>
+                    <p>adidas阿迪达斯男子跑步鞋ULTRABOOST潮流运动鞋BB6166</p>
+                    <article>
+                        <span>￥749</span>
+                        <del>1499</del>
+                        <span>立即抢购</span>
+                    </article>
+                </li>
+                <li>
+                    <article><img src="img/pbx/pbx01.jpg" alt=""></article>
+                    <p>adidas阿迪达斯男子跑步鞋ULTRABOOST潮流运动鞋BB6166</p>
+                    <article>
+                        <span>￥749</span>
+                        <del>1499</del>
+                        <span>立即抢购</span>
+                    </article>
+                </li>
+            </ul>
+        </article>
+    </article>
+    <article class="brand">
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </article>
+    <article class="mainfoot">
+        <img src="img/foot-goto-i.jpg" alt="">
+    </article>
+    <article class="fixed">
+        <article class="fixL">
+            <ul>
+                <li class="fixLBtn">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-liwu"></use>
+                    </svg>
+                    <p>
+                        热门活动
+                    </p>
+                </li>
+                <li class="fixLBtn">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-r"></use>
+                    </svg>
+                    <p>
+                        品牌分类
+                    </p>
+                </li>
+                <li class="fixLBtn"> <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-ai-cart"></use>
+                </svg>
+                <div class="fixLTitle">
+                    购物车
+                </div>
+                </li>
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-dingdan"></use>
+                    </svg>
+                    <div class="fixLTitle">
+                        我的订单
+                    </div>
+                </li>
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-shoucang"></use>
+                    </svg>
+                    <div class="fixLTitle">
+                        我的收藏
+                    </div>
+                </li>
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-fenxiang"></use>
+                    </svg>
+                    <div class="fixLTitle">
+                        分享
+                    </div>
+                </li>
+                <li class="retTop" style="visibility: hidden">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-top"></use>
+                    </svg>
+                    <div class="fixLTitle">
+                        返回顶部
+                    </div>
+                </li>
+            </ul>
+        </article>
+        <article class="fixR">
+            <ul class="fixR1">
+                <li>
+                    <img src="img/fixl01.jpg" alt="">
+                </li>
+                <li>
+                    <img src="img/fixl02.jpg" alt="">
+                </li>
+                <li>
+                    <img src="img/fixl03.jpg" alt="">
+                </li>
+                <li>
+                    <img src="img/fixl04.jpg" alt="">
+                </li>
+                <li>
+                    <img src="img/fixl05.png" alt="">
+                </li>
+                <li>
+                    <img src="img/fixl06.png" alt="" >
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="###">2019新品 ></a></li>
+                        <li><a href="###">篮球战靴 ></a></li>
+                        <li><a href="###">断码特惠 ></a></li>
+                        <li><a href="###">智能跑步鞋 ></a></li>
+                        <li><a href="###">板鞋专区 ></a></li>
+                        <li><a href="###">NB复古鞋 ></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="fixR2">
+                <li>
+                    <img src="img/fixr01.png" alt="">
+                </li>
+                <li>
+                    <ul>
+                        <li style="background-position: -2px -2px;">耐克</li>
+                        <li style="background-position: -76px 0;">阿迪达斯</li>
+                        <li style="background-position: -147px 0;">三叶草</li>
+                        <li style="background-position: -4px -38px;">阿迪达斯</li>
+                        <li style="background-position: -76px -38px;">新百伦</li>
+                        <li style="background-position: -147px -38px;">匡威</li>
+                        <li style="background-position: -2px -76px;">彪马</li>
+                        <li style="background-position: -76px -76px;">斯凯奇</li>
+                        <li style="background-position: -147px -76px;">锐步</li>
+                        <li style="background-position: -2px -112px;">亚瑟士</li>
+                        <li style="background-position: -90px -393px;">DC</li>
+                        <li style="background-position: -76px -110px;">卡帕</li>
+                        <li style="background-position: -147px -114px;">安踏</li>
+                        <li style="background-position: -2px -152px;">李宁</li>
+                        <li style="background-position: -76px -152px;">万斯</li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="img/fixr03.png" alt="">
+                </li>
+                <li>
+                    <ul>
+                        <li style="background-position: -8px -190px;">探路者</li>
+                        <li style="background-position: -146px -356px;">非凡探索</li>
+                        <li style="background-position: -16px -392px;">哥伦比亚</li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="img/fixr04.png" alt="">
+                </li>
+                <li>
+                    <ul>
+                        <li style="background-position: -149px -193px">兰蒂维</li>
+                        <li style="background-position: -147px -276px;">奥康</li>
+                        <li style="background-position:  -2px -238px;">星期六</li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="img/fixr05.png" alt="">
+                </li>
+                <li>
+                    <ul>
+                        <li style="background-position:  -77px -315px;">耐克童鞋</li>
+                        <li style="background-position: -76px 0;">阿迪童鞋</li>
+                        <li style="background-position:  -146px -315px;">迪士尼</li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="img/fixr02.png" alt="">
+                </li>
+            </ul>
+            <ul class="fixR3">
+                <li>
+                    <a href="#">全屏查看</a>
+                </li>
+                <li>
+                    <ul class="gwList">
+                        <li>
+                            <div>
+                                <img src="img/pbx/pbx01.jpg" alt="">
+                            </div>
+                            <div>
+                                <p title="Adidas阿迪达斯三叶草女鞋2019新款低帮运动鞋休闲鞋跑步鞋G27649(尺码:36.5,颜色:白色+绿色)">Adidas阿迪达斯三叶草女鞋2019新款低帮运动鞋休闲鞋跑步鞋G27649(尺码:36.5,颜色:白色+绿色)</p>
+                                <span class="gwPrice">￥498.00</span>
+                                <span class="gwNum">
+                                    <span>-</span>
+                                    <span>x2</span>
+                                    <span>+</span>
+                                    <span>删除</span>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <article>
+                        <span>已选 <strong>1</strong>件 </span>
+                        <span>￥1234.00</span>
+                    </article>
+                    <article>
+                        结算&nbsp;
+                        <svg class="icon" aria-hidden="true" style="font-size: 16px;">
+                            <use xlink:href="#icon-youjiantou"></use>
+                        </svg>
+                    </article>
+                </li>
+            </ul>
+        </article>
+    </article>
 </main>
-<footer>
-
-</footer>
+<footer></footer>
 </body>
-<script src="//at.alicdn.com/t/font_1183519_nx9bgbl39f.js"></script>
+<script src="//at.alicdn.com/t/font_1183519_z194l4doyas.js"></script>
 <script src="lib/jquery-1.10.1.min.js"></script>
 <script src="js/common.js"></script>
+<script src="js/teXiaoFenZhuan.js"></script>
+<script src="lib/swiper.min.js"></script>
 <script src="js/main.js"></script>
-<script>
-    ;(() => {
-        $(`header`).load('html/head.html')
-        $(`footer`).load(`html/foot.html`)
-    })()
-</script>
+<script src="js/fixed.js"></script>
 </html>
