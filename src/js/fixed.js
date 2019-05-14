@@ -1,4 +1,4 @@
-$(`.fixed`).load(`./fixed.html`,function () {
+$(`.fixed`).load(`./fixed.html`, function () {
     $(`.fixL>ul>li`).hover(function () {
         $(this).find(`.fixLTitle`).finish()
         $(this).find(`.fixLTitle`).css(`display`, `block`).animate({
