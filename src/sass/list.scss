@@ -26,6 +26,7 @@ main{
       padding: 2px 6px;
       border-radius: 2px;
       margin-right: 10px;
+      cursor: pointer;
     }
   }
   .spList{
@@ -47,13 +48,16 @@ main{
         background: white;
         padding:0 3px 8px;
         img{
-          height: 100%;
+          width: 210px;
+          height: 210px;
         }
         .smallImg{
           height: 35px;
           text-align: left;
           text-indent: 5px;
           img{
+            height: 35px;
+            width: 35px;
             border: 1px solid #ccc;
           }
         }
@@ -86,6 +90,10 @@ main{
         }
       }
     }
+  }
+  .fenYeBtn{
+    margin-top: 20px;
+    text-align: center;
   }
   .mainfoot {
     text-align: center;

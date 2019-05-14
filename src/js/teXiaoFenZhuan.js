@@ -67,7 +67,11 @@ let returnTop = (btnId, height, speed) => {
                 window.scrollTo(0, scrollTop)
             }
         }, 10)
+        document.body.onmousewheel = () => {
+            clearInterval(timer)
+        }
     }
+
 }
 let shouFenQin = (btnId, boxId) => {
     /*实现手风琴
