@@ -22,11 +22,17 @@ main{
     padding: 0 5px 0 10px;
     font-size: 12px;
     span:nth-of-type(1)~span{
-      background: #ccc;
       padding: 2px 6px;
       border-radius: 2px;
       margin-right: 10px;
       cursor: pointer;
+    }
+    span:nth-of-type(2)~span{
+      background: #ccc;
+    }
+    span:nth-of-type(2){
+      background:#ff9900;
+      color:#fff;
     }
   }
   .spList{
@@ -42,6 +48,7 @@ main{
       border: 1px solid #cccccc;
       position: relative;
       margin-top: 30px;
+      cursor: pointer;
       &>article:nth-of-type(1){
         text-align: center;
         border-bottom: 1px solid #ccc;
@@ -55,10 +62,12 @@ main{
           height: 35px;
           text-align: left;
           text-indent: 5px;
+          padding: 2px 0;
           img{
             height: 35px;
             width: 35px;
             border: 1px solid #ccc;
+            margin-right: 3px;
           }
         }
       }

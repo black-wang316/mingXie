@@ -364,5 +364,7 @@ let removeCookie = (key)=>{
 //返回首页
 $("body").on('click',` .retMainHtm`,()=>{
 	console.log(1)
-	location.href=`../main.html`
+	location.href=`main.html`
 })
+
+//分页

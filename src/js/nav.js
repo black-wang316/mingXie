@@ -21,4 +21,9 @@ $(`nav`).load(`./nav.html`, function () {
             $(this).css(`text-decoration`, `none`)
         }
     })
+    $(this).on('click',`a`,function () {
+        $.cookie('kw', $(this).text().trim());
+        window.open('list.html')
+    })
+    // console.log($(`a`).text())
 })

@@ -1,5 +1,4 @@
 ;(() => {
-    $(`header`).load(`head.html`)
     $(`footer`).load(`foot.html`)
     $('.allType').on(`mouseenter mouseleave`, `li`, function (ev) {
         if (ev.type == `mouseenter`) {
@@ -68,6 +67,7 @@
                 if (!ok) arr2.push({sid: item.typeid, all: [item]})
             })
             let arr3 = []
+            console.log(arr3)
             for (let i = 0; i < arr2.length; i++) {
                 arr3[i] = arr2[i].all.slice(0, 12)
             }
@@ -85,7 +85,7 @@
             function xuanRang(arr) {
                 let res = arr.map((item) => {
                     return `<li  data-id="${item.id}">
-                                     <article><img src="${JSON.parse(item.imgsrc)[0]}" alt=""></article>
+                                     <article><img src="${JSON.parse(item.imgsrc)[0][0]}" alt=""></article>
                                      <p>${item.title}</p>
                                      <article>
                                          <span>￥${item.price}</span>
@@ -97,5 +97,17 @@
                 return res
             }
         }
+    })
+    $(`.brand`).on(`click`,`a`,function () {
+        $.cookie('kw', $(this).attr(`title`).trim());
+        window.open('list.html')
+    })
+    $(`.hot`).on(`click`,`a`,function () {
+        $.cookie('kw', $(this).attr(`title`).trim());
+        window.open('list.html')
+    })
+    $(`.explosion`).on(`click`,`a`,function () {
+        $.cookie('dataId',$(this).attr(`data-id`).trim())
+        window.open(`details.html`)
     })
 })()
