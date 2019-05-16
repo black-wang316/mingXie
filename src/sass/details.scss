@@ -298,10 +298,10 @@ main {
       padding: 10px;
       margin-top: 20px;
       .star {
-        width: 630px;
+        width: 310px;
         height: 65px;
         padding: 12px 10px 0 30px;
-        border-right: 1px solid #eee;
+        //border-right: 1px solid #eee;
         float: left;
         color: #999;
         & > span:nth-of-type(1) {
@@ -330,6 +330,37 @@ main {
               font-size: 25px;
             }
           }
+        }
+      }
+      .pingLunInp{
+        float: left;
+        font-size: 12px;
+        margin-left: 15px;
+        border: 1px solid #ccc;
+        div{
+          color: red;
+          span{
+            display: inline-block;
+            width: 60px;
+            height: 11px;
+            overflow: hidden;
+            background: url(../img/pro_detial_icon1.png) no-repeat -99px -190px;
+            line-height: 11px;
+            i{
+              display: inline-block;
+              width: 0;
+              line-height: 11px;
+              height: 11px;
+              overflow: hidden;
+              background: url(../img/pro_detial_icon1.png) no-repeat -99px -178px;
+            }
+          }
+        }
+        textarea{
+          height: 65px;
+          width: 528px;
+          border: none;
+          outline: none;
         }
       }
       .pingLunBtn {

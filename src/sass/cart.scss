@@ -80,6 +80,8 @@ main {
             text-align: center;
             line-height: 30px;
             background: #ccc;
+            user-select: none;
+            cursor: pointer;
           }
           input {
             float: left;

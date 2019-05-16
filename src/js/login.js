@@ -38,6 +38,8 @@
                 login.then((data) => {
                     if (data.status) {
                         $(`.loginTitle`).css("visibility", "visible").html(data.msg).addClass(`success`)
+                        $.cookie(`uName`,$(`#name`).val(),{ expires: 7 })
+                        location.href=`${$.cookie(`urlNow`)}`
                     }else {
                         $(`.loginTitle`).css("visibility", "visible").html(data.msg).removeClass(`success`)
                     }
