@@ -16,8 +16,9 @@
                 $(`.details`).html(arr.map((item) => {
                     return `        <div class="goods-introduce clearfix">
             <div class="goods-introduce-left">
-                <div class="goods-img">
-                    <img src="${img[colors][0]}" alt="" />
+                <div class="goods-img magnify">
+                    <div class='large'></div>
+                    <img src="${img[colors][0]}" alt="" class="example"/>
                 </div>
                 <div class="goods-smallImg clearfix">
                     <ul>
@@ -192,6 +193,18 @@
                         }
 
                 })
+                $(".example").imagezoomsl({
+                    cursorshade: true,
+                    magnifycursor: 'crosshair',
+                    cursorshadecolor: '#fff',
+                    cursorshadeopacity: 0.3,
+                    cursorshadeborder: '1px solid black',
+                    zindex: '',
+                    stepzoom: 0.5,
+                    zoomrange: [2, 2],
+                    zoomstart: 2,
+                    disablewheel: true
+                });
 
             }
         })

@@ -118,7 +118,20 @@
                     },
                     success: str => {
                         let arr = JSON.parse(str)
-                        alert(arr.msg)
+                        // alert(arr.msg)
+                        layui.use('layer', function () {
+                            let layer = layui.layer;
+                            layer.open({
+                                title: '汝跳否？'
+                                , content: '是否跳转到登录页面'
+                                , btn: ['给我跳', '告辞'],
+                                btn1: function () {
+                                    location.href = `login.html`
+                                },
+                                closeBtn: 2,
+                                anim: 4,
+                            });
+                        })
                     }
                 })
             } else {

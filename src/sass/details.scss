@@ -1,5 +1,5 @@
 main {
-  .active{
+  .active {
     border-color: #ff9900 !important;
   }
   .path {
@@ -19,6 +19,7 @@ main {
         border: 1px solid #f0f0f0;
         position: relative;
         height: 430px;
+
         img {
           width: 100%;
           height: 100%;
@@ -39,7 +40,7 @@ main {
               height: 100%;
               width: 100%;
               border: 1px solid #f0f0f0;
-              &:hover{
+              &:hover {
                 border-color: #ff9900;
               }
             }
@@ -181,7 +182,7 @@ main {
               margin-right: 6px;
               text-align: center;
               box-sizing: border-box;
-              img{
+              img {
                 width: 100%;
                 height: 100%;
               }
@@ -213,7 +214,7 @@ main {
               border: 1px solid #cccccc;
               text-align: center;
             }
-            b{
+            b {
               visibility: hidden;
             }
           }
@@ -332,21 +333,21 @@ main {
           }
         }
       }
-      .pingLunInp{
+      .pingLunInp {
         float: left;
         font-size: 12px;
         margin-left: 15px;
         border: 1px solid #ccc;
-        div{
+        div {
           color: red;
-          span{
+          span {
             display: inline-block;
             width: 60px;
             height: 11px;
             overflow: hidden;
             background: url(../img/pro_detial_icon1.png) no-repeat -99px -190px;
             line-height: 11px;
-            i{
+            i {
               display: inline-block;
               width: 0;
               line-height: 11px;
@@ -356,7 +357,7 @@ main {
             }
           }
         }
-        textarea{
+        textarea {
           height: 65px;
           width: 528px;
           border: none;
@@ -386,33 +387,33 @@ main {
         display: flex;
         justify-content: space-between;
         margin-top: 15px;
-        &>ul {
+        & > ul {
           display: flex;
           flex-direction: column;
         }
-        &>ul:nth-of-type(1){
+        & > ul:nth-of-type(1) {
           width: 80px;
           justify-content: center;
-          li:nth-of-type(1){
+          li:nth-of-type(1) {
             width: 60px;
             height: 60px;
-            img{
+            img {
               width: 100%;
               height: 100%;
             }
           }
-          li:nth-of-type(2){
+          li:nth-of-type(2) {
             color: darkblue;
           }
         }
-        &>ul:nth-of-type(2){
+        & > ul:nth-of-type(2) {
           width: 825px;
           height: 120px;
           background: #fffde3;
           position: relative;
           font-size: 12px;
           padding: 20px;
-          &:after{
+          &:after {
             content: '';
             position: absolute;
             top: 30px;
@@ -422,50 +423,50 @@ main {
             transform: rotate(45deg);
             background-color: #fffde3;
           }
-          li:nth-of-type(1){
+          li:nth-of-type(1) {
             display: flex;
             justify-content: space-between;
-            div:nth-of-type(1){
+            div:nth-of-type(1) {
               color: red;
-             span{
-               display: inline-block;
-               width: 60px;
-               height: 11px;
-               overflow: hidden;
-               background: url(../img/pro_detial_icon1.png) no-repeat -99px -190px;
-               line-height: 11px;
-               i{
-                 display: inline-block;
-                 width: 100%;
-                 line-height: 11px;
-                 height: 11px;
-                 overflow: hidden;
-                 background: url(../img/pro_detial_icon1.png) no-repeat -99px -178px;
-               }
-             }
+              span {
+                display: inline-block;
+                width: 60px;
+                height: 11px;
+                overflow: hidden;
+                background: url(../img/pro_detial_icon1.png) no-repeat -99px -190px;
+                line-height: 11px;
+                i {
+                  display: inline-block;
+                  width: 100%;
+                  line-height: 11px;
+                  height: 11px;
+                  overflow: hidden;
+                  background: url(../img/pro_detial_icon1.png) no-repeat -99px -178px;
+                }
+              }
             }
-            div:nth-of-type(2){
+            div:nth-of-type(2) {
               color: #888888;
             }
           }
-          li:nth-of-type(2){
+          li:nth-of-type(2) {
             padding: 15px 0;
             margin-bottom: 5px;
             border-bottom: 1px dashed #ccc;
           }
-          li:nth-of-type(3){
-              p{
-                display: inline-block;
-                width: 60px;
-                height: 22px;
-                line-height: 22px;
-                text-align: center;
-                background: rgb(110,210,210);
-                cursor: pointer;
-                float: right;
-                border: 1px solid #cccccc;
-                border-radius: 5px;
-              }
+          li:nth-of-type(3) {
+            p {
+              display: inline-block;
+              width: 60px;
+              height: 22px;
+              line-height: 22px;
+              text-align: center;
+              background: rgb(110, 210, 210);
+              cursor: pointer;
+              float: right;
+              border: 1px solid #cccccc;
+              border-radius: 5px;
+            }
           }
         }
       }

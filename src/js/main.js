@@ -1,3 +1,4 @@
+
 ;(() => {
     $(`footer`).load(`foot.html`)
     $('.allType').on(`mouseenter mouseleave`, `li`, function (ev) {
@@ -96,6 +97,11 @@
                 }).join(``)
                 return res
             }
+
+            $(`.listMain`).on('click','li',function () {
+                $.cookie('dataId',$(this).attr(`data-id`).trim())
+                window.open(`details.html`)
+            })
         }
     })
     $(`.brand`).on(`click`,`a`,function () {

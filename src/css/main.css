@@ -34,7 +34,6 @@ main .explosion {
   main .explosion article {
     width: 1055px;
     height: 1969px;
-    background: deepskyblue;
     opacity: .5;
     margin: 27px auto;
     padding: 140px 40px 20px; }
@@ -47,8 +46,7 @@ main .explosion {
         main .explosion article > ul > li > ul {
           height: 100%; }
           main .explosion article > ul > li > ul li {
-            height: 25%;
-            background: #58bc58; }
+            height: 25%; }
             main .explosion article > ul > li > ul li a {
               display: block;
               width: 100%;
