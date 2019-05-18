@@ -118,6 +118,7 @@
                     },
                     success: str => {
                         let arr = JSON.parse(str)
+                        $.cookie(`uName`,$(`#name`).val().trim())
                         // alert(arr.msg)
                         layui.use('layer', function () {
                             let layer = layui.layer;

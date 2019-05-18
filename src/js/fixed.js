@@ -158,5 +158,7 @@ $(`.fixed`).load(`./fixed.html`, function () {
             })
         })
     }
-    init()
+    if ($.cookie(`uName`)){
+        init()
+    }
 })

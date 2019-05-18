@@ -21,24 +21,34 @@ $(`header`).load('../html/head.html', function () {
             list($(this).text().trim());
         }
     })
-    if ($.cookie(`uName`)=='null') {
-        // $(`.headTitle1`).html(`您好！${$.cookie(`uName`)}`)
-        // $(`.headTitle2`).html(`退出`).on(`click`,function () {
-        //     $.cookie(`uName`,null)
-        // })
+    if($.cookie('uName')){
+        if ($.cookie(`uName`)=='null') {
+            // $(`.headTitle1`).html(`您好！${$.cookie(`uName`)}`)
+            // $(`.headTitle2`).html(`退出`).on(`click`,function () {
+            //     $.cookie(`uName`,null)
+            // })
+            $(`.headTitle1`).html(`欢迎登陆名鞋库`).on('click',function () {
+                location.href=`login.html`
+            })
+            $(`.headTitle2`).html(`免费注册`).on(`click`,function () {
+                location.href=`register.html`
+            })
+        }else{
+            $(`.headTitle1`).html(`您好！${$.cookie(`uName`)}`)
+            $(`.headTitle2`).html(`退出`).on(`click`,function () {
+                $.cookie(`uName`,null)
+                location.reload()
+            })
+        }
+    }else {
         $(`.headTitle1`).html(`欢迎登陆名鞋库`).on('click',function () {
             location.href=`login.html`
         })
         $(`.headTitle2`).html(`免费注册`).on(`click`,function () {
             location.href=`register.html`
         })
-    }else{
-        $(`.headTitle1`).html(`您好！${$.cookie(`uName`)}`)
-        $(`.headTitle2`).html(`退出`).on(`click`,function () {
-            $.cookie(`uName`,null)
-            location.reload()
-        })
     }
+
     let uName = $.cookie(`uName`)
     $.ajax({
         type:'post',

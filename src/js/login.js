@@ -1,6 +1,11 @@
-;(()=>{
+;(() => {
     $(`header`).load('../html/headWithoutSearch.html')
     $(`footer`).load(`../html/foot.html`)
+    if ($.cookie(`uName`) != 'null') {
+        $(`#name`).val($.cookie(`uName`))
+    }else {
+        $(`#name`).val(``)
+    }
 //随机验证码
     $(`#logincode~p`).html(function () {
         $(this).html(randomCode())
@@ -25,7 +30,7 @@
                         type: 'post',
                         url: '../api/loginRegister.php',
                         data: {
-                            type:'login',
+                            type: 'login',
                             username: $(`#name`).val().trim(),
                             password: $(`#psw`).val().trim()
                         },
@@ -38,9 +43,9 @@
                 login.then((data) => {
                     if (data.status) {
                         $(`.loginTitle`).css("visibility", "visible").html(data.msg).addClass(`success`)
-                        $.cookie(`uName`,$(`#name`).val(),{ expires: 7 })
-                        location.href=`${$.cookie(`urlNow`)}`
-                    }else {
+                        $.cookie(`uName`, $(`#name`).val(), {expires: 7})
+                        location.href = `${$.cookie(`urlNow`)}`
+                    } else {
                         $(`.loginTitle`).css("visibility", "visible").html(data.msg).removeClass(`success`)
                     }
                 })

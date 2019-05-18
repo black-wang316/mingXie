@@ -34,6 +34,12 @@
         border: 1px solid #ccc; }
       .login .loginForm ul li p {
         display: inline-block; }
+      .login .loginForm ul li a {
+        cursor: pointer;
+        font-size: 12px; }
+        .login .loginForm ul li a:hover {
+          color: red;
+          text-decoration: underline; }
     .login .loginForm ul > li:nth-of-type(1) p {
       font-size: 12px;
       background: #FCEAE8;

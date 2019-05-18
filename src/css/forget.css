@@ -1,0 +1,103 @@
+.login {
+  display: flex; }
+  .login > li:nth-of-type(1) {
+    width: 100%;
+    padding: 28px 0 0; }
+    .login > li:nth-of-type(1) img {
+      cursor: pointer; }
+  .login > li:nth-of-type(2) {
+    width: 60%; }
+  .login ul {
+    width: 450px;
+    margin: auto; }
+  .login .loginForm ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #eee;
+    box-shadow: 3px 3px #F5F5F5;
+    float: left; }
+    .login .loginForm ul li {
+      width: 370px; }
+      .login .loginForm ul li span:nth-of-type(1) {
+        display: inline-block;
+        width: 60px;
+        text-align: right;
+        margin: 15px; }
+      .login .loginForm ul li input {
+        width: 230px;
+        height: 30px;
+        border: 1px solid #ccc; }
+      .login .loginForm ul li p {
+        display: inline-block; }
+      .login .loginForm ul li a {
+        cursor: pointer;
+        font-size: 12px; }
+        .login .loginForm ul li a:hover {
+          color: red;
+          text-decoration: underline; }
+    .login .loginForm ul li:nth-of-type(4) input {
+      width: 100px; }
+    .login .loginForm ul li:nth-of-type(4) p {
+      font-size: 12px;
+      width: 100px;
+      background: #ccc;
+      height: 30px;
+      color: white;
+      border-radius: 5px;
+      text-align: center;
+      line-height: 30px;
+      vertical-align: middle;
+      cursor: pointer; }
+    .login .loginForm ul > li:nth-of-type(1) p {
+      font-size: 12px;
+      background: #FCEAE8;
+      color: #E6594E;
+      height: 22px;
+      line-height: 22px;
+      border: 1px solid #E6594E; }
+    .login .loginForm ul > li:nth-of-type(5) input {
+      width: 70px; }
+  .login #logincode ~ p {
+    width: 70px;
+    height: 30px;
+    background: #ccc;
+    vertical-align: middle;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer; }
+  .login .loginBtn {
+    background: url(../img/regBtn.png) no-repeat 0 -198px;
+    width: 89px;
+    height: 38px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 38px;
+    cursor: pointer; }
+  .login .regLj {
+    font-size: 12px;
+    padding: 35px 0 25px; }
+    .login .regLj a {
+      color: #FF6600;
+      text-decoration: underline #FF6600; }
+    .login .regLj a:hover {
+      color: red; }
+  .login .elselogin {
+    padding: 12px 0 0;
+    font-size: 12px;
+    color: #888; }
+    .login .elselogin a {
+      display: inline-block;
+      float: left;
+      margin-top: 10px;
+      width: 115px;
+      height: 20px; }
+  .login .loginTitle {
+    visibility: hidden; }
+
+/*# sourceMappingURL=forget.css.map */

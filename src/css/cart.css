@@ -1,0 +1,132 @@
+nav {
+  text-align: center; }
+
+main {
+  margin-top: 20px; }
+  main .main h2 {
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #888888;
+    font-size: 14px;
+    margin-bottom: 5px; }
+  main .main .cartTitle {
+    display: flex;
+    justify-content: space-between;
+    background: #E5E5E5;
+    height: 30px;
+    padding: 0 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #888888;
+    font-size: 12px; }
+    main .main .cartTitle li {
+      flex: 1; }
+    main .main .cartTitle li:nth-of-type(1) {
+      flex-grow: 3; }
+  main .main .list {
+    padding: 10px 20px;
+    border: 1px solid #E5E5E5; }
+    main .main .list .minList {
+      display: flex;
+      justify-content: space-between;
+      color: #888888;
+      font-size: 12px;
+      height: 80px;
+      border-bottom: 1px solid #cccccc;
+      margin-top: 15px; }
+      main .main .list .minList > li {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      main .main .list .minList > li:nth-of-type(1) {
+        flex-grow: 3; }
+        main .main .list .minList > li:nth-of-type(1) figure {
+          display: flex;
+          justify-content: space-between;
+          height: 100%;
+          align-items: center; }
+          main .main .list .minList > li:nth-of-type(1) figure img {
+            width: 50px;
+            height: 50px; }
+          main .main .list .minList > li:nth-of-type(1) figure figcaption {
+            margin-left: 10px; }
+            main .main .list .minList > li:nth-of-type(1) figure figcaption a {
+              max-height: 48px;
+              overflow: hidden;
+              color: #2a2a2a; }
+              main .main .list .minList > li:nth-of-type(1) figure figcaption a:hover {
+                color: red;
+                text-decoration: underline; }
+      main .main .list .minList > li:nth-of-type(3) p {
+        float: left;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        background: #ccc;
+        user-select: none;
+        cursor: pointer; }
+      main .main .list .minList > li:nth-of-type(3) input {
+        float: left;
+        width: 50px;
+        height: 30px;
+        text-align: center; }
+      main .main .list .minList > li:last-of-type span {
+        display: inline-block;
+        width: 50px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        background: #cccccc;
+        border-radius: 5px;
+        cursor: pointer; }
+        main .main .list .minList > li:last-of-type span:hover {
+          text-decoration: underline;
+          color: red; }
+    main .main .list .minList:last-of-type {
+      border: none; }
+  main .main .total {
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc; }
+    main .main .total article {
+      text-align: right; }
+    main .main .total article:nth-of-type(1) span {
+      font-weight: bold;
+      color: #BD0000; }
+    main .main .total article:nth-of-type(2) span {
+      font-weight: bold;
+      font-size: 25px;
+      color: #BD0000; }
+  main .main .final {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px; }
+    main .main .final .retShop {
+      line-height: 37px;
+      margin-right: 15px;
+      cursor: pointer; }
+      main .main .final .retShop:hover {
+        color: #BD0000;
+        text-decoration: underline; }
+        main .main .final .retShop:hover .icon {
+          fill: red !important; }
+    main .main .final .finalBtn {
+      width: 171px;
+      height: 37px;
+      line-height: 36px;
+      border: 0;
+      display: block;
+      background: orange;
+      padding: 0;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 10px;
+      cursor: pointer; }
+
+/*# sourceMappingURL=cart.css.map */

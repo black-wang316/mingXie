@@ -1,0 +1,93 @@
+main .path {
+  font-size: 12px;
+  padding: 10px 0; }
+  main .path .titleL {
+    float: left; }
+  main .path .titleR {
+    float: right; }
+    main .path .titleR strong {
+      color: red; }
+main .paiXu {
+  border: 1px solid #dbdbdb;
+  border-top-width: 4px;
+  background: #f7f7f7;
+  height: 36px;
+  line-height: 36px;
+  color: #666;
+  padding: 0 5px 0 10px;
+  font-size: 12px; }
+  main .paiXu span:nth-of-type(1) ~ span {
+    padding: 2px 6px;
+    border-radius: 2px;
+    margin-right: 10px;
+    cursor: pointer; }
+  main .paiXu span:nth-of-type(2) ~ span {
+    background: #ccc; }
+  main .paiXu span:nth-of-type(2) {
+    background: #ff9900;
+    color: #fff; }
+main .spList {
+  width: 100%;
+  padding: 30px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #cccccc; }
+  main .spList > li {
+    width: 23%;
+    height: 326px;
+    border: 1px solid #cccccc;
+    position: relative;
+    margin-top: 30px;
+    cursor: pointer; }
+    main .spList > li > article:nth-of-type(1) {
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+      background: white;
+      padding: 0 3px 8px; }
+      main .spList > li > article:nth-of-type(1) img {
+        width: 210px;
+        height: 210px; }
+      main .spList > li > article:nth-of-type(1) .smallImg {
+        height: 35px;
+        text-align: left;
+        text-indent: 5px;
+        padding: 2px 0; }
+        main .spList > li > article:nth-of-type(1) .smallImg img {
+          height: 35px;
+          width: 35px;
+          border: 1px solid #ccc;
+          margin-right: 3px; }
+    main .spList > li > article:nth-of-type(2) {
+      font-size: 12px;
+      overflow: hidden;
+      height: 60px;
+      position: absolute;
+      top: 263px;
+      left: 0;
+      z-index: 10;
+      width: 100%;
+      padding: 0 3px; }
+      main .spList > li > article:nth-of-type(2) > article {
+        max-height: 20px;
+        line-height: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+        main .spList > li > article:nth-of-type(2) > article:nth-of-type(3) {
+          color: #888888; }
+        main .spList > li > article:nth-of-type(2) > article del {
+          color: #888888; }
+        main .spList > li > article:nth-of-type(2) > article strong {
+          color: red; }
+main .fenYeBtn {
+  margin-top: 20px;
+  text-align: center; }
+main .mainfoot {
+  text-align: center;
+  margin-top: 30px; }
+  main .mainfoot img {
+    vertical-align: middle;
+    cursor: pointer; }
+
+/*# sourceMappingURL=list.css.map */
